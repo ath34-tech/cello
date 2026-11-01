@@ -73,4 +73,3 @@ class ApiKey(models.Model):
             expires_at=expires_at,
         )
         return key, f"{prefix}.{secret}"
-

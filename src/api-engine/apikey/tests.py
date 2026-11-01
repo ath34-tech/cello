@@ -156,4 +156,3 @@ class ApiKeyTests(TestCase):
         self.assertEqual(listed.data, [])
         res = self.client.post(f"{KEYS}/{key.id}/revoke", **self.jwt())
         self.assertEqual(res.status_code, 404)
-

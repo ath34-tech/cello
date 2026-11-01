@@ -35,4 +35,3 @@ class ApiKeyCreateSerializer(serializers.Serializer):
         max_value=365,
         default=90,
     )
-

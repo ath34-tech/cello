@@ -53,4 +53,3 @@ class ApiKeyViewSet(viewsets.GenericViewSet):
             key.revoked_at = timezone.now()
             key.save(update_fields=["revoked_at"])
         return Response(self.get_serializer(key).data)
-
